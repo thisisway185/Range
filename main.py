@@ -9,9 +9,9 @@ def rangee(x=1, y=10):
            x += 1
            print(x)
        answer = input("Do you use rangee again? yes/no: ")
-       if answer=="yes":
+       if answer=="yes" or "y" or "ye" or "yeah":
            continue
-       elif answer =="no":
+       elif answer =="no" or "n" or "not":
            print("Thank you for using our program.")
            answer = False
        else:
