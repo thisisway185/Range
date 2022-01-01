@@ -6,19 +6,19 @@ def rangee(x=1, y=10):
     print("Welcome to the program.")
     answer = True
     while answer:
-        answer = input("\nDo you use default rangee? yes/no or mods \n>>>")
-        if answer=="yes":
-           Line1.line1()
-        elif answer =="no":
-           print("Thank you for using our program.")
-           answer = False
-        elif answer == "mods" or "Mods":
+         answ = input("\nDo you use default rangee? yes/mods or exit \n>>>")
+         if answ=="exit":
+            print("Thank you for using our program.")
+            answer = False
+         elif answ=="yes":
+            Line1.line1()
+         elif answ == "mods":
             ans = input("Switch to single line mode(L) or switch to single line mode without spaces?(Lws): ")
-            if ans == "l" or "L":
+            if ans == "L":
                Line2.line2() 
-            elif ans == "lws" or "Lws":
+               continue
+            elif ans == "Lws":
                Line3.line3()
-        else:
+               continue
+         else:
             print("No such command was found, the program started from scratch.")
-
-rangee()
